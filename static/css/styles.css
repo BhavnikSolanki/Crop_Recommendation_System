@@ -1,0 +1,233 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans|Arial|Courier+New|Georgia|Times+New+Roman|Verdana');
+
+html,body{
+background-image: url('/static/images/background.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+color:white
+}
+
+.jumbotron-custom {
+    background-color: rgba(0, 0, 0, 0.5); /* Black color with 70% opacity for transparency */
+    color: white; /* Set the text color to white for contrast */
+}
+
+.font-customizer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.font-customizer label {
+    color: white;
+    margin-right: 10px;
+}
+
+.font-customizer select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 1  !important;
+box-shadow: 0 0 0 1 !important;
+
+}
+
+/* Apply transparency to all input fields */
+input[type="text"], 
+input[type="password"], 
+input[type="email"],
+textarea, 
+select {
+    background-color: rgba(0, 0, 0, 0.8); /* White background with 50% opacity */
+    border: 1px solid #cccccc78; /* Light gray border */
+    color: #333; /* Dark text color for contrast */
+    padding: 0.5em; /* Add some padding */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 2px;
+}
+
+.remember{
+color: rgb(255, 255, 255);
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #12b4ff;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: rgb(104, 75, 249);
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+/* Basic reset and container styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Wrapper for button and info box */
+.info-wrapper {
+    position: relative; /* Required for absolute positioning of the info box */
+}
+
+/* Style for the button */
+.info-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Style for the info box */
+.info-box {
+    position: absolute;
+    top: 400%;
+    left: -5%; /* Position to the right of the button */
+    transform: translateY(-50%);
+    padding: 8px;
+    background-color: #0000008a;
+    color: white;
+    border-radius: 4px;
+    display: none; /* Hide initially */
+    white-space: nowrap;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+/* Show info box on button hover */
+.info-wrapper:hover .info-box {
+    display: block;
+}
+
+/* Show info box on hover */
+.info-wrapper:hover .info-box {
+    display: block;
+}
+
+/* Customize Primary Button */
+.btn-primary {
+    
+    background-color: #0056b3; /* Change background color */
+    border-color: #004494; /* Change border color */
+    color: #ffffff; /* Change text color */
+    font-weight: bold; /* Make text bold */
+    border-radius: 0.5rem; /* Adjust border radius */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #004494; /* Darker background color on hover */
+    border-color: #003366; /* Darker border color on hover */
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.5); /* Add shadow effect */
+}
+
+/* Customize Secondary Button */
+.btn-secondary {
+    background-color: #6c757d; /* Change background color */
+    border-color: #5a6268; /* Change border color */
+    color: #ffffff; /* Change text color */
+    font-weight: bold; /* Make text bold */
+    border-radius: 0.5rem; /* Adjust border radius */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Darker background color on hover */
+    border-color: #4e555b; /* Darker border color on hover */
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); /* Add shadow effect */
+}
+
+/* Header Styling */
+.header {
+    position: absolute;
+    top: 350px;
+    left: 660px;
+    color: #ffffff;
+}
+
+/* Row for Buttons */
+.button-row {
+    margin-top: 100px; /* Adjust as needed to position below the header */
+}
