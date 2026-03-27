@@ -44,7 +44,8 @@ cd Crop_Recommendation_System
 ```
 
 ### 2. Create and activate Virtual environment (Recommended)
-```python -m venv venv
+```
+python -m venv venv
 ```
 # Windows
 ```
@@ -61,6 +62,40 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ###4. Run the application
+```
 python app.py
-
+```
 Open your browser and go to: http://127.0.0.1:5000/ (or the port shown in terminal)
+
+📊 Dataset
+The project uses the standard Crop Recommendation Dataset containing:
+
+N, P, K values
+Temperature, Humidity, pH, Rainfall
+22 different crop labels
+
+Dataset is located inside the crop_recommendation_dataset/ folder.
+
+🤝 How to Use
+
+Run the app using python app.py
+Fill in the 7 parameters (Nitrogen, Phosphorus, Potassium, Temperature, Humidity, pH, Rainfall)
+Click Predict to get the recommended crop
+
+
+📄 Contributing
+Feel free to contribute by:
+
+Improving the UI/UX
+Adding more models (XGBoost, Deep Learning, etc.)
+Adding feature importance visualization
+Deploying to Heroku / Render / Railway
+
+
+📝 Note
+
+There is an old file named redme.txt — you can safely delete it after using this README.md.
+This project is built with Flask (not Streamlit).
+
+
+Made with 💚 for Farmers & Agritech Enthusiasts
