@@ -38,22 +38,28 @@ This project uses a trained **scikit-learn** model to predict crops like Rice, M
 ## 🚀 Installation & Setup
 
 ### 1. Clone the repository
-
+```bash
 git clone https://github.com/BhavnikSolanki/Crop_Recommendation_System.git
 cd Crop_Recommendation_System
+```
 
 ### 2. Create and activate Virtual environment (Recommended)
-python -m venv venv
-
+```python -m venv venv
+```
 # Windows
+```
 venv\Scripts\activate
+```
 
 # Mac/Linux
+```
 source venv/bin/activate
-
-### 3. Install required packages
+```
+#
+## 3. Install required packages
+```
 pip install -r requirements.txt
-
+```
 ###4. Run the application
 python app.py
 
