@@ -1,0 +1,9 @@
+step 1: Open visual studio code or on PyCharm
+step 2: select a folder where the files are extracted
+step 3: open app.py in any of the above platform (VScode / PyCharm)
+step 4: Run a command 
+		"pip install -r requirements.txt"
+			and hit enter
+step 5: Run "app.py" code 
+step 6: click on the link generated in terminal (http://127.0.0.1:5000/) after running the code 
+step 7: it will show on the installed browser and enjoy learning
