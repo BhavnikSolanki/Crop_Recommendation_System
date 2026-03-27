@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Login</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+
+        <button type="submit" class="btn login_btn">Login</button>
+        <a href="/forgot_password" class="btn btn-link">Forgot Password?</a>
+    </form>
+    </div>
+
+    <!-- JavaScript for showing alert -->
+    <script>
+        // Check if there is a flash message
+        const flashMessage = "{{ get_flashed_messages()|safe }}";
+        if (flashMessage) {
+            alert(flashMessage);
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+{% endblock %}

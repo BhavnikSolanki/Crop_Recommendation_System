@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h1 class="mt-5">Welcome to Crop and Pesticide Prediction</h1>
+        <p class="lead">Use our advanced machine learning models to predict suitable crops and pesticides.</p>
+        <div class="mt-4">
+            <a href="{{ url_for('auth.login') }}" class="btn btn-primary">Login</a>
+            <a href="{{ url_for('auth.register') }}" class="btn btn-secondary">Register</a>
+        </div>
+    </div>
+{% endblock %}

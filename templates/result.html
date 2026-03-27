@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <!-- Row for Prediction Result and Additional Information -->
+    <div class="row">
+        <!-- Left Column for Prediction Result -->
+        <div class="col-6">
+            <h2>Prediction Result</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Recommended Crop:</h5>
+                    <img src="{{ url_for('static', filename='images/' + prediction + '.jpg') }}" class="card-img-top" alt="Crop Image">
+                    <h5 class="card-title text-center">{{ prediction }}</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column for Additional Information -->
+        <div class="col-6">
+            <h2>Additional Information</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Details</h5>
+                    <p class="card-text">Here you can add more details about the crop or any other relevant information.</p>
+                    <p class="card-text">For example, soil type, best growing season, tips for cultivation, etc.</p>
+                    <p class="card-text">You can also provide links to resources, articles, or guides related to the crop.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row for Centered Button -->
+    <div class="row mt-3">
+        <div class="col-11 d-flex justify-content-center">
+            <a href="/" class="btn btn-primary">Home</a>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+{% endblock %}

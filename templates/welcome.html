@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome</h1>
+        </header>
+        <div class="row button-row">
+            <div class="col-md-6">
+                <div class="info-wrapper">
+                    <a class="btn btn-primary btn-block" href="/input_page">Predict Crop</a>
+                    <div class="info-box">
+                        <p>It's a cornerstone of precision agriculture, enabling tailored</p>
+                        <p>farming practices for specific field conditions. As the growing season progresses,</p>
+                        <p>prediction accuracy typically improves with more available data. By incorporating</p>
+                        <p>pest and disease models, these systems provide comprehensive yield estimates,</p>
+                        <p>ultimately helping farmers make informed decisions about planting dates and crop varieties.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-wrapper">
+                    <a class="btn btn-secondary btn-block" href="/input_page">Predict Pesticides</a>
+                    <div class="info-box">
+                        <p>It's a cornerstone of precision agriculture, enabling tailored</p>
+                        <p>farming practices for specific field conditions. As the growing season progresses,</p>
+                        <p>prediction accuracy typically improves with more available data. By incorporating</p>
+                        <p>pest and disease models, these systems provide comprehensive yield estimates,</p>
+                        <p>ultimately helping farmers make informed decisions about planting dates and crop varieties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+{% endblock %}
